@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Redesign Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300;1,600&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin:0 auto;
+            font-family: 'Bitter', serif;
+        }
+        /* .container1 > * {
+            border: solid 1px #ff0000;
+        } */
+        img {
+            max-width: 600px;
+            height:auto;
+        }
+        p {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .container1 {
+            display: grid;
+            margin:0 auto;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: minmax(200px, auto);
+            max-width:1200px;
+            background-color: #f7eaea;
+        }
+        .header1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            padding: 50px;
+            background-color: #b1060f;
+        }
+        .header2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: left;
+            /* text-align: center; */
+            /* height: 160px; */
+            padding: 50px 10px 0px 0px;
+            background-color: #b1060f;
+            color: white;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .title {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        .analysis {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        .navText {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        .myListNav {
+            grid-column: 1/3;
+            display: flex;
+            padding: 10px 50px 10px 50px;
+            justify-content: center;
+            text-align: center;
+            background-color: #fcf7f7;
+        }
+        .appImgs1 {
+            grid-column: 1/2;
+            display: flex;
+            justify-content: center;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        .appImgs2 {
+            grid-column: 2/3;
+            display: flex;
+            justify-content: center;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        .research {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+        }
+        .g1 {
+            grid-column: 1/2;
+            padding: 10px 0px 10px 50px;
+        }
+        .info1 {
+            grid-column: 2/3;
+            padding: 10px 50px 10px 0px;
+        }
+        .g2 {
+            grid-column: 1/2;
+            padding: 10px 0px 10px 50px;
+        }
+        .info2 {
+            grid-column: 2/3;
+            padding: 10px 50px 10px 0px;
+        }
+        .g3 {
+            grid-column: 1/2;
+            padding: 10px 0px 10px 50px;
+        }
+        .info3 {
+            grid-column: 2/3;
+            padding: 10px 50px 10px 0px;
+        }
+        .g4 {
+            grid-column: 1/2;
+            padding: 10px 0px 10px 50px;
+        }
+        .info4 {
+            grid-column: 2/3;
+            padding: 10px 50px 10px 0px;
+        }
+        .g5 {
+            grid-column: 1/2;
+            padding: 10px 0px 10px 50px;
+        }
+        .info5 {
+            grid-column: 2/3;
+            padding: 10px 50px 10px 0px;
+        }
+        .statement {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        .solution {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        .mockup1 {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            display: flex;
+            justify-content: center;
+            background-color: #fcf7f7;
+        }
+        .solution2 {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        .mockup2 {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            display: flex;
+            justify-content: center;
+            background-color: #fcf7f7;
+        }
+        .thankYou {
+            grid-column: 1/3;
+            padding: 10px 50px 10px 50px;
+            background-color: #fcf7f7;
+        }
+        footer {
+            grid-column: 1/3;
+            padding: 20px 50px 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="header1">
+            <img src="new_logo.png" alt="new logo">
+        </div>
+        <div class="header2">
+            <h1>App Flow Redesign Case Study</h1>
+        </div>
+        <div class="title">
+            <h2>Redesigning the user interface of the Netflix Mobile App - A UX Case Study</h2>
+            <p>By: Jessica Rosanio</p>
+            <br>
+            <h2>Introduction:</h2>
+            <p>With online streaming becoming more and more popular, Netflix is one of the major apps users often utilize to watch their favorite shows or movies. Netflix has a very large following and its app offers many different sections for users to explore. However, the user interface for this app has inconsistencies between users, marketing images, and web platform displays. Netflix also has features that a majority of their viewers are not aware of. As a main streaming service, these features should be altered to enhance user experience.</p>
+        </div>
+        <div class="analysis">
+            <h2>App Analysis:</h2>
+            <p>
+                In looking into the user interface of the Netflix app I have found multiple inconsistencies with it’s layout. The images below show the representation of the app as seen through a user’s personal phone, on the left, and as it is seen in the app store, on the right. Through further investigation, it is easy to see that the bottom navigation tabs are different on the physical app and the app store mockups. The Netflix mockups also display a different category information hierarchy on the home page than the user display. 
+            </p>
+        </div>
+        <div class="appImgs1">
+            <img src="home1.PNG" width="300" alt="home 1">
+            <img src="home2.PNG" width="300" alt="home 2">
+        </div>
+        <div class="appImgs2">
+            <img src="IMG_2009.PNG" width="200" alt="App store 1">
+            <img src="IMG_2010.PNG" width="200" alt="App store 2">
+        </div>
+        <div class="navText">
+            <h2>Current Navigation to "My List":</h2>
+        </div>
+        <div class="myListNav">
+            <img src="myListNav1.png" width="300" alt="list nav 1">
+            <img src="myListNav2.png" width="300" alt="list nav 2">
+            <img src="myListNav3.png" width="300" alt="list nav 3">
+        </div>
+        <div class="research">
+            <h2>User Research:</h2>
+            <p>
+                After researching the features of the Netflix app I found that these differences are false advertising for users. To get a better understanding of how users interact with the app, a 5 question survey was sent out to collect the common interactions of participants.
+            </p>
+        </div>
+        <div class="g1">
+            <img src="q1.png" alt="question 1">
+        </div>
+        <div class="info1">
+            <h3>Question 1:</h3>
+            <p>
+                The first question asked users to rank the home page categories from most to least likely to select from. The purpose of this question is to solidify the hierarchy users prefer when first entering the app. In reviewing the results, there was a clear first choice of "Continue Watching. “Top picks for user” was then clearly the third most likely to be picked out of the categories. Between “Trending now” and “Watch it again” there was a close difference in second most likely and least likely, however “trending now” had a favorability towards second most likely and “watch it again” had a favorability towards least likely. These results will help determine the ideal order to list the categories on the home page.
+            </p>
+        </div>
+        <div class="g2">
+            <img src="q2.png" alt="question 2">
+        </div>
+        <div class="info2">
+            <h3>Question 2:</h3>
+            <p>
+                In asking participants about the bottom navigation of Netflix’s home page, 39.4% of users were not aware the the “New & Hot” tab existed. However, 33.3% visit this tab occasionally. From this it can be concluded that the “New & Hot” tab is not necessary but is not completely ignored by all participants.
+            </p>
+        </div>
+        <div class="g3">
+            <img src="q3.png" alt="question 3">
+        </div>
+        <div class="info3">
+            <h3>Question 3:</h3>
+            <p>Over half of the surveyed participants do not know about the “Fast Laughs” tab on the Netflix home page. Only 18.2% of users occasionally visit this tab while the rest never view it. This is more of a reel feature, and with these results, it can be concluded that this tab should be eliminated from the bottom row of navigation.</p>
+        </div>
+        <div class="g4">
+            <img src="q4.png" alt="question 4">
+        </div>
+        <div class="info4">
+            <h3>Question 4:</h3>
+            <p>Close to half of participants responded that they occasionally browse “My List”. Around 24.2% answered that they visit it every time they go into the app. The “My List” tab was the only one out of the three recorded that had a response for “Every visit to the app”. This shows that users should have easy access to this tab over the other two that are currently displayed on the home page navigation.</p>
+        </div>
+        <div class="g5">
+            <img src="q5.png" alt="question 5">
+        </div>
+        <div class="info5">
+            <h3>Question 5:</h3>
+            <p>This question asked where users go when entering the Netflix app. There is a display of a select few responses, and after reviewing the results, 25 out of the 33 participants listed browsing their “continue watching” row as one of their top 3 navigation paths. The other popular responses were “My List” or “Search”.</p>
+        </div>
+        <div class="statement">
+            <h2>Design Statement:</h2>
+            <p>How might we improve the experience of users navigating the home page of the Netflix app?</p>
+            <h3>Pain Point 1: “My List” Accessibility</h3>
+            <p>As shown in the survey responses, many participants visit their list whenever going into the Netflix app. Users currently don’t have immediate access to this tab which can lead to confusion and extra time spent searching for what they want.</p>
+            <h3>Pain Point 2: Category hierarchy</h3>
+            <p>The order of categories on the home page is one of the first visuals users encounter. Netflix tends to keep this inconsistent from user to user however order of importance is generally the same between participants.</p>
+        </div>
+        <div class="solution">
+            <h2>Navigation Solution:</h2>
+            <p>After gathering results from participants, I found that the bottom navigation and the order of categories on the home page were not designed in a way that benefit users. The new navigation for Netflix would include a “My List” tab and exclude the “Fast Laughs” tab.</p>
+            <h3>Bottom Navigation Mockup:</h3>
+            <p>This display and navigation will allow users to easily access their list from the home page. It will only take one path for users to access the page from the bottom navigation instead of finding the list through their profile.</p>
+        </div>
+        <div class="mockup1">
+            <img src="new_home1.png" width="300" alt="new home">
+            <img src="myListNav3.png" width="300" alt="nav 3">
+        </div>
+        <div class="solution2">
+            <h2>Category Solution:</h2>
+            <p>From the survey results it was clear that the “Continue watching” category is the most selected from. Given the Netflix algorithm, this list is not always the first viewed, which should be fixed. The following categories had varied results, however, there is a general order of importance that should be displayed on the home page. Given the limited scope of my research, I found an order that would work well for the participants at hand.</p>
+            <h3>Home Page Mockup:</h3>
+            <p>As shown in this app mockup, the categories are listed in order of preference from the conducted user research. Given that "Trending Now" and "Watch it Again" were two categories that competed for the second listing, these two categories should be determined by one's algorithm. However, to keep the page consistent, this order should be the same for the initial home display and advertising.</p>
+        </div>
+        <div class="mockup2">
+            <img src="new_home2.png" width="300" alt="new home">
+        </div>
+        <div class="thankYou">
+            <h2>Thank you for reading!</h2>
+            <p>Thank you so much for reading through this Netflix case study. This project was created through an App Flow Redesign assignment for the SMAD 308: Interactive Design II course at James Madison University. Through the investigation of this Netflix UX case study, I was able to apply my understanding of user experience and user research in order to create a better user interface for a popular streaming application.</p>
+        </div>
+        <footer>
+            <span>Jessica Rosanio</span>
+            <span>rosanija@dukes.jmu.edu</span>
+            <span>516-502-8642</span>
+        </footer>
+    </div>
+</body>
+</html>
